@@ -1,4 +1,4 @@
-var speed = 100;
+var speed = 1000;
 var fade = 500;
 
 $(document).ready(function(){
@@ -17,7 +17,7 @@ $(function () {
         e.preventDefault();
 
         $('body,html').animate({
-            scrollTop: speed
+            scrollTop: 0
         }, speed);
     });
 });
