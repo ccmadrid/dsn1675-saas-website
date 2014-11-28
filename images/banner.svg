@@ -4,9 +4,6 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
 <g>
-	<path fill="#FFFFFF" d="M6,7v487h487V7H6z M487,487H13v-94.9l474-271.6V487z"/>
-</g>
-<g>
 	<path d="M0,0v500h500V0H0z M487,487H13V13h474V487z"/>
 	<polygon fill="#FFFFFF" points="487,120.5 487,487 13,487 13,392.1 	"/>
 </g>

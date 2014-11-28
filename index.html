@@ -9,6 +9,7 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/grids.css" rel="stylesheet">
 	<link href="css/typography.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Slab' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 </head>
 <body>
@@ -18,7 +19,7 @@
 		<li><a href="#main">Jump to Main Content</a></li>
 	</ul>
 
-	<header role="header" class="header grid">
+	<header role="banner" class="header grid">
 		<div class="unit unit-s-3-4 island">
 			<h1><a href="#" class="logo">ANIMEH!</a></h1>
 		</div>
@@ -30,26 +31,33 @@
 
 	<div class="nav-top grid">
 		<div class="unit unit-s-centered island">
-			<form action="test.html" method="post" class="">
+			<form action="#" method="post" class="">
 				<div class="search">
 					<input id="search" type="search" placeholder="Search"></input>
-					<label for="search"><img src="images/search.svg" alt="search" class="search-icon"></label>
+					<label for="search"></label>
 				</div>
+
+				<div class="submit">
+            <button type="submit"><img src="images/search.svg" alt="search" class="search-icon"></button>
+        </div>
 			</form>
 		</div>
 
 		<div class="unit unit-s-1">
 			<nav class="navigation" id="nav">
 					<ul class="grid">
-						<li class="unit unit-s-1 island-2 link1"><a href="#">Link 1</a></li>
-						<li class="unit unit-s-1 island-2 link2"><a href="#">Link 2</a></li>
-						<li class="unit unit-s-1 island-2 link3"><a href="#">Link 3</a></li>
+						<li class="unit unit-s-1 island-2 link1 giga"><a href="#">Home</a></li>
+						<li class="unit unit-s-1 island-2 link2 giga"><a href="#">Pricing</a></li>
+						<li class="unit unit-s-1 island-2 link3 giga"><a href="#">Get Started!</a></li>
 					</ul>
 				</nav>
 		</div>
 
-		<div class="carousel unit unit-s-1 island">
-			<img src="http://placehold.it/280x100" alt="carousel">
+		<div class="carousel unit unit-s-1 grid">
+			<div class="unit unit-s-1-4"><img src="images/cover-1.jpeg"></div>
+			<div class="unit unit-s-1-4"><img src="images/cover-1.jpeg"></div>
+			<div class="unit unit-s-1-4"><img src="images/cover-1.jpeg"></div>
+			<div class="unit unit-s-1-4"><img src="images/cover-1.jpeg"></div>
 		</div>
 
 	</div>
@@ -59,9 +67,11 @@
 
 		<div class="unit unit-s-1 grid">
 			<div class="unit unit-s-1 overlap">
-				<img src="images/banner.svg" alt="banner" class="span">
+				<img src="images/banner.svg" alt="banner" class="banner">
 				<div class="unit unit-s-centered">
+
 					<img src="images/bubble.svg" alt="bubble" class="bubble">
+
 				</div>
 
 			<div class="unit unit-s-centered">
@@ -71,41 +81,43 @@
 			</div>
 		</div>
 
-		<div class="unit unit-s-1">
-			<a href="#" class="signup">Sign Up Now!</a>
+		<div class="unit unit-s-centered">
+			<a href="#" class="signup push-1-2">Sign Up Now!</a>
 		</div>
 
 
 			<div class="unit unit-s-1 grid">
-				<div class="unit unit-s-1 overlap">
+				<div class="unit unit-s-1 overlap round push-1-2">
 						<img src="images/no-ads.jpg" alt="feature 1" class="span">
 						<div class="gutter">
-						<h2>Enjoy No Ads!</h2>
+						<h2 class="island giga">Enjoy No Ads!</h2>
 						</div>
 				</div>
 
-				<div class="unit unit-s-1 overlap">
+				<div class="unit unit-s-1 overlap round push-1-2">
 						<img src="images/hd-quality.jpg" alt="feature 1" class="span">
 						<div class="gutter">
-						<h2>HD Quality Streaming and Downloads</h2>
+						<h2 class="island giga">HD Quality Streaming and Downloads</h2>
 						</div>
 				</div>
 			</div>
 	</article>
 
 	<footer role="footer" class="footer grid">
-		<div class="unit unit-s-3-4">
+		<div class="unit unit-s-1-4 island-1-2">
+			<p class="micro">&copy;ANIMEH! 2014</p>
+		</div>
+
+		<div class="unit unit-s-2-3">
 			<nav>
-			<ul class="grid island">
-				<li class="unit unit-s-1-3 island"><a href="#">Link 1</a></li>
-				<li class="unit unit-s-1-3 island"><a href="#">Link 2</a></li>
-				<li class="unit unit-s-1-3 island"><a href="#">Link 3</a></li>
+			<ul class="grid island-1-2">
+				<li class="unit unit-s-1-3 island micro"><a href="#">Home</a></li>
+				<li class="unit unit-s-1-3 island micro"><a href="#">Pricing</a></li>
+				<li class="unit unit-s-1-3 island mega"><a href="#" class="">Get Started!</a></li>
 			</ul>
 		</nav>
 		</div>
-		<div class="unit unit-s-1-4 island">
-			<p class="micro">&copy;ANIMEH! 2014</p>
-		</div>
+
 
 	</footer>
 

@@ -1,5 +1,5 @@
 html {
-  font: normal 100%/1.5 Gerogia, serif;
+  font: normal 100%/1.5 'Roboto Slab', serif;
 
 }
 
@@ -25,6 +25,11 @@ html {
     font-size: 130%;
   }
 
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
 }
 
 h1, h2, h3, h4, h5, h6,

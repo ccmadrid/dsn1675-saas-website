@@ -46,11 +46,10 @@ body {
 .logo:link,
 .logo:visited {
     padding: 0;
-    width: 100%;
     overflow: hidden;
     position: absolute;
     background: url(../images/logo-01.svg) no-repeat;
-    background-size: contain;
+    background-size: 4em;
     text-indent: 100%;
     white-space: nowrap;
 }
@@ -64,7 +63,8 @@ body {
     width: 4rem;
     overflow: hidden;
     position: absolute;
-    text-align: right;
+    top: 1.75em;
+    right: 5%;
     background: url(../images/burger.svg) no-repeat 0 0;
     text-indent: 100%;
     white-space: nowrap;
@@ -94,9 +94,59 @@ body {
     padding: 0;
 }
 
-.search label img {
+.search, .submit {
     display: inline-block;
-    margin: 3px;
+    margin: 0;
+}
+
+button {
+    padding: 0.5em;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px
+}
+
+button:hover {
+    background-color: #eeeeee;
+}
+
+button:active {
+    background-color: #d2d2d2;
+}
+
+button:focus {
+    outline: 3px solid #000;
+}
+
+.field {
+    display: block;
+    font-size: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 45em;
+}
+
+.field:focus {
+    outline: 3px solid #000;
+}
+
+.input-field{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 45em;
+}
+textarea {
+    display: block;
+    margin: 0 auto;
+    resize: none;
+    width: 100%;
+    height: 14em;
+    border: 1px solid #ccc;
+}
+
+textarea:focus {
+    outline: 3px solid #000;
 }
 
 .search-icon {
@@ -132,7 +182,7 @@ body {
 
 
 .carousel img{
-    margin: 0 auto;
+    margin: 0;
 }
 
 
@@ -143,13 +193,17 @@ body {
 .banner {
     width:100%;
     position:  relative;
+    background-color: #000;
+    background-image: url(../images/cover-2.jpeg) no-repeat;
 }
 
 .signup {
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
-}
+    display: block;
+    text-decoration: none;
+    padding: 1.5em;
+    background-color: #eee;
+    color: #222;
+   }
 
 .device, .bubble {
     position: absolute;
@@ -168,16 +222,27 @@ body {
 }
 
 
-
-
 .overlap {
-        position: relative;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
 }
 
 .overlap h2 {
-        position: absolute;
-        bottom: 0;
-        text-align: left;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.round {
+    border-radius: 2em;
+    overflow: hidden;
 }
 
 .span {
@@ -190,7 +255,11 @@ body {
 }
 .footer a {
     text-decoration: none;
-    color: #fff;
+    color: #222;
+}
+
+.r{
+    color: red;
 }
 
 .footer ul {
@@ -198,3 +267,51 @@ body {
 }
 
 .footer
+
+*=======================ACCESSIBILITY========================*/
+a:focus {
+    outline: 3px solid #eee;
+}
+
+a:hover,
+a:active {
+}
+
+.skip-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skip-links a {
+    position: absolute;
+    top: -3em;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 0.75em;
+    font-size: 1.25em;
+}
+
+.skip-links a:focus {
+    top: 0;
+}
+/*=======================ACCESSIBILITY========================*/
+@media only screen and (min-width: 26.667em){
+
+
+}
+
+@media only screen and (min-width: 57.167em){
+.nav-btn {
+    display: none;
+}
+.nav-top {
+    background-color: #ddd;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+}
+
+}
