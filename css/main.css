@@ -78,6 +78,7 @@ body {
     max-height: 0em;
     overflow: hidden;
     position: absolute;
+    z-index: 999;
     -moz-transition: all 250ms linear;
     -o-transition: all 250ms linear;
     -webkit-transition: all 250ms linear;
@@ -107,8 +108,8 @@ body {
     text-align: center;
 }
 
-.navigation li {
-    padding: 0.25em 0;
+.navigation li, .footer li {
+    padding: 0.25em;
 }
 
 .navigation a,
@@ -129,3 +130,68 @@ body {
 .carousel img{
     margin: 0 auto;
 }
+
+
+.main {
+    position: relative;
+}
+
+.banner {
+    width:100%;
+    position:  relative;
+}
+
+.signup {
+    padding: 1em;
+    background-color: #ffe;
+
+    text-align: center:;
+}
+
+.device, .bubble {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: solid 2px;
+    width: 25%;
+    top: 50%;
+    left: 25%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.device {
+    left: 75%;
+}
+
+
+
+
+.overlap {
+        position: relative;
+}
+
+.overlap h2 {
+        position: absolute;
+        bottom: 0;
+        text-align: left;
+}
+
+.span {
+    margin: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: #eee;
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer
