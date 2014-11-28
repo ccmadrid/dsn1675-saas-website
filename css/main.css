@@ -219,7 +219,6 @@ textarea:focus {
 }
 
 .banner {
-    height: 15em;
     margin: 0 auto;
     position:  relative;
     overflow: hidden;
@@ -236,7 +235,7 @@ textarea:focus {
     text-align: center;
    }
 
-.device, .bubble {
+.bubble {
 
 }
 
@@ -244,7 +243,6 @@ textarea:focus {
     display: block;
 
 }
-
 
 
 
@@ -283,7 +281,6 @@ textarea:focus {
 }
 
 .ontop {
-    height: 15em;
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -331,13 +328,22 @@ textarea:focus {
     dsplay: block;
     height: 2em;
 }
+
 .cta {
     position: absolute;
-    top: 4em;
-    padding: 0.5em;
-    width: 25%
+    margin: 0 auto;
+    top: 1em;
+    padding: 1.5em;
+    width: 95%;
+    text-align: center;
+    font-size: 6vw;
+
 }
 
+
+.ontop, .banner {
+     height: 175vw;
+}
 *=======================ACCESSIBILITY========================*/
 a:focus {
     outline: 3px solid #eee;
@@ -387,7 +393,7 @@ a:active {
     }
 
 .ontop, .banner {
-     height: 20em;
+     height: 105vw;
 }
 
 
