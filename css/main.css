@@ -71,3 +71,37 @@ body {
     text-indent: 100%;
     white-space: nowrap;
 }
+
+.nav-top {
+    background-color: #ddd;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.search label {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.search label img {
+    display: inline-block;
+    margin: 3px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navigation li {
+    padding: 0.25em 0;
+}
+
+.navigation a {
+        text-decoration: none;
+        color: #555;
+}
