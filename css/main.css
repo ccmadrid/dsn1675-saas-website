@@ -203,6 +203,10 @@ textarea:focus {
     width: 100%;
 }
 
+.link2{
+    background-color: #eee;
+}
+
 .covers {
     display: inline-block;
     padding: 0;
