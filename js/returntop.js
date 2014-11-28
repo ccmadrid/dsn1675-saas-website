@@ -1,4 +1,4 @@
-var speed = 1000;
+var speed = 250;
 var fade = 500;
 
 $(document).ready(function(){
