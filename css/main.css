@@ -42,21 +42,19 @@ body {
     margin: 0;
 }
 
-.logo {
-    height: 1em;
-    display: block;
-    position: center;
-}
-
-.title {
+.logo,
+.logo:link,
+.logo:visited {
+    padding: 0;
+    width: 100%;
     overflow: hidden;
-    text-decoration: none;
-    color: #fff;
+    position: absolute;
+    background: url(../images/logo-01.svg) no-repeat;
+    background-size: contain;
+    text-indent: 100%;
+    white-space: nowrap;
 }
 
-.title h1 {
-    margin: 0;
-}
 
 .nav-btn,
 .nav-btn:link,
@@ -142,10 +140,9 @@ body {
 }
 
 .signup {
-    padding: 1em;
-    background-color: #ffe;
-
-    text-align: center:;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .device, .bubble {
