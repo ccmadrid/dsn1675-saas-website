@@ -9,8 +9,7 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/grids.css" rel="stylesheet">
 	<link href="css/typography.css" rel="stylesheet">
-	<link href="http://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Slab" rel="stylesheet" type="text/css">
-	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -20,19 +19,20 @@
 	</ul>
 
 	<header role="banner" class="header grid">
-		<div class="unit unit-s-3-4 island">
-			<h1><a href="#" class="logo">ANIMEH!</a></h1>
+		<div class="unit unit-s-1-2 unit-m-1-2">
+			<a href="#" class="logo"><img src="images/logo-01.svg" alt="logo" class="icon"><h1 class="title zetta">ANIMEH!</a></h1>
 		</div>
 
-		<div class="unit unit-s-1-4 island">
+		<div class="unit unit-s-1-4 unit-offset-s-1-4  unit-m-1-4 unit-offset-m-1-4 island">
 			<a href="#nav" class="nav-btn" data-state="inactive">Navigate</a>
+			<a href="#top"><img src="images/return.svg" alt="return-to-top" class="rtt"></a>
 		</div>
 	</header>
 
 	<div class="nav-top grid">
-		<div class="unit unit-s-centered island">
-			<form action="#" method="post" class="">
-				<div class="search">
+		<div class="unit unit-s-centered unit-m-centered">
+			<form action="#" method="post" class="search">
+				<div class="search-field">
 					<label for="search">Search</label>
 					<input id="search" type="text" placeholder="ex. Dragon Ball Z">
 				</div>
@@ -46,44 +46,85 @@
 		<div class="unit unit-s-1">
 			<nav class="navigation" id="nav">
 					<ul class="grid">
-						<li class="unit unit-s-1 island-2 link1 giga"><a href="#">Home</a></li>
-						<li class="unit unit-s-1 island-2 link2 giga"><a href="#">Pricing</a></li>
-						<li class="unit unit-s-1 island-2 link3 giga"><a href="#">Get Started!</a></li>
+						<li class="unit unit-s-1 unit-m-1-3 island-2 link1 giga"><a href="#">Home</a></li>
+						<li class="unit unit-s-1 unit-m-1-3 island-2 link2 giga"><a href="#">Pricing</a></li>
+						<li class="unit unit-s-1 unit-m-1-3 island-2 link3 giga"><a href="#">Sign Up!</a></li>
 					</ul>
 				</nav>
 		</div>
 
-		<div class="carousel unit unit-s-1 grid">
-			<div class="unit unit-s-1-4"><img src="images/cover-1.jpeg" alt="cover art"></div>
-			<div class="unit unit-s-1-4"><img src="images/cover-1.jpeg" alt="cover art"></div>
-			<div class="unit unit-s-1-4"><img src="images/cover-1.jpeg" alt="cover art"></div>
-			<div class="unit unit-s-1-4"><img src="images/cover-1.jpeg" alt="cover art"></div>
+		<div class="unit unit-s-1">
+			<div class="grid">
+				<div class="unit unit-s-1-4 push-t-1-2" ><img src="images/cover-1.jpeg" alt="cover art" class="covers"></div>
+				<div class="unit unit-s-1-4 push-t-1-2" ><img src="images/cover-2.jpeg" alt="cover art" class="covers"></div>
+				<div class="unit unit-s-1-4 push-t-1-2" ><img src="images/cover-3.jpeg" alt="cover art" class="covers"></div>
+				<div class="unit unit-s-1-4 push-t-1-2" ><img src="images/cover-4.jpeg" alt="cover art" class="covers"></div>
+			</div>
 		</div>
-
 	</div>
 
 	<article role="main" id="main"class="main grid">
 
+<div class="unit unit-s-1 overlap">
+<img src="images/banner.svg" alt="banner" class="banner">
+</div>
 
-		<div class="unit unit-s-1 grid">
+<div class="unit unit-s-1 ontop">
+
+	<div class="grid island-2">
+
+		<div class="unit unit-s-1-2 unit-m-1-3 unit-l-1-4">
+			<img src="images/bubble.svg" alt="bubble" class="bubble">
+		</div>
+
+		<div class="unit-s-1-2 unit-m-2-3 unit-l-3-4">
+			<div class="grid">
+				<div class="unit unit-s-1 unit-m-1-3 unit-l-1-8">
+					<img src="images/iphone.svg" alt="device" class="iphone">
+				</div>
+				<div class="unit unit-s-1 unit-m-2-3 unit-l-1-4">
+					<img src="images/tablet.svg" alt="device" class="ipad">
+				</div>
+				<div class="unit unit-s-1 unit-m-1-2 unit-l-5-8">
+					<img src="images/macbook.svg" alt="device" class="macbook">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="unit unit-s-centered island">
+			<a href="#" class="signup peta">Sign Up Now!</a>
+		</div>
+
+
+<!--
+		<div class="unit unit-s-1">
+		<div class="grid">
 			<div class="unit unit-s-1 overlap">
 				<img src="images/banner.svg" alt="banner" class="banner">
-				<div class="unit unit-s-centered">
+				<div class="unit unit-s-centered unit-m-1-3">
 
 					<img src="images/bubble.svg" alt="bubble" class="bubble">
 
 				</div>
 
-			<div class="unit unit-s-centered">
+			<div class="unit unit-s-centered unt-m-2-3">
+				<div class="grid devices">
 				<img src="images/iphone.svg" alt="device" class="device">
+				</div>
 			</div>
 
 			</div>
 		</div>
 
 		<div class="unit unit-s-centered">
-			<a href="#" class="signup push-1-2">Sign Up Now!</a>
+			<a href="#" class="signup push-1-2 peta">Sign Up Now!</a>
 		</div>
+</div>
+-->
+
+
+
 
 
 			<div class="unit unit-s-1 grid">

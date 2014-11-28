@@ -46,14 +46,38 @@ body {
 .logo:link,
 .logo:visited {
     padding: 0;
+    margin: 0.75em;
+    width: 100%;
+    height: 7em;
     overflow: hidden;
     position: absolute;
-    background: url(../images/logo-01.svg) no-repeat;
+
+    /*background: url(../images/logo-01.svg) no-repeat;*/
     background-size: 4em;
     text-indent: 100%;
     white-space: nowrap;
 }
 
+.title {
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.icon {
+    width: 50%;
+    margin: 0.75em;
+}
+
+.rtt {
+    width: 70px;
+    height: 42px;
+    position: fixed;
+    bottom: -1px;
+    right: -1px;
+    border-radius: 3rem 0 0 3rem;
+    box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
 
 .nav-btn,
 .nav-btn:link,
@@ -94,7 +118,7 @@ body {
     padding: 0;
 }
 
-.search, .submit {
+.search-field, .submit {
     display: inline-block;
     margin: 0;
 }
@@ -180,11 +204,12 @@ textarea:focus {
     width: 100%;
 }
 
-
-.carousel img{
+.covers {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
     margin: 0;
 }
-
 
 .main {
     position: relative;
@@ -193,35 +218,36 @@ textarea:focus {
 .banner {
     width:100%;
     position:  relative;
-    background-color: #000;
+    /*background-color: #000;*/
     background-image: url(../images/cover-2.jpeg) no-repeat;
 }
 
 .signup {
     display: block;
     text-decoration: none;
-    padding: 1.5em;
+    padding: 1em;
+    margin: 0 5%;
     background-color: #eee;
     color: #222;
+    border: solid #000 2px;
+    text-align: center;
    }
 
 .device, .bubble {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 40%;
-    top: 50%;
-    left: 25%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+
 }
 
-.device {
-    left: 75%;
-    background-image: url(../images/cover-1.jpg);
+.iphone{
+    display: block;
 }
 
+.ipad {
+    display: none;
+}
 
+.macbook {
+    display: none;
+}
 .overlap {
     position: relative;
     margin: 0;
@@ -238,6 +264,13 @@ textarea:focus {
     text-align: center;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.45);
+}
+
+.ontop {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    z-index: 99;
 }
 
 .round {
@@ -258,9 +291,6 @@ textarea:focus {
     color: #222;
 }
 
-.r{
-    color: red;
-}
 
 .footer ul {
     list-style: none;
@@ -299,19 +329,33 @@ a:active {
 /*=======================ACCESSIBILITY========================*/
 @media only screen and (min-width: 26.667em){
 
+    .icon {
+        width: 13em;
+    }
 
+    .nav-top {
+        max-height: 5.5em;
+
+    }
+
+    .main {
+        top: 5.5em;
+    }
+
+.ipad {
+    display: block;
+}
+
+
+
+.
 }
 
 @media only screen and (min-width: 57.167em){
-.nav-btn {
-    display: none;
-}
-.nav-top {
-    background-color: #ddd;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    z-index: 999;
+
+
+.macbook {
+    display: block;
 }
 
 }
