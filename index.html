@@ -21,12 +21,12 @@
 			<a href="#" class="title"><h1 class="">ANIMEH!</h1></a>
 		</div>
 		<div class="unit unit-s-1-4 island">
-			<a href="#" class="nav-btn">navigate</a>
+			<a href="#nav" class="nav-btn" data-state="inactive">Navigate</a>
 		</div>
 	</header>
 
-	<div class="nav-top grid island">
-		<div class="unit unit-s-centered push">
+	<div class="nav-top grid">
+		<div class="unit unit-s-centered island">
 			<form action="test.html" method="post" class="">
 				<div class="search">
 					<input id="search" type="search" placeholder="Search"></input>
@@ -38,16 +38,16 @@
 		<div class="unit unit-s-1">
 			<nav class="navigation" id="nav">
 					<ul class="grid">
-						<li class="unit unit-s-1 island"><a href="#">Link 1</a></li>
-						<li class="unit unit-s-1 island"><a href="#">Link 2</a></li>
-						<li class="unit unit-s-1 island"><a href="#">Link 3</a></li>
+						<li class="unit unit-s-1 island link1"><a href="#">Link 1</a></li>
+						<li class="unit unit-s-1 island link2"><a href="#">Link 2</a></li>
+						<li class="unit unit-s-1 island link3"><a href="#">Link 3</a></li>
 					</ul>
 				</nav>
 		</div>
 
-		<div class="carousel unit unit-s-1">
-					<img src="http://placehold.it/280x100" alt="carousel">
-				</div>
+		<div class="carousel unit unit-s-1 island">
+			<img src="http://placehold.it/280x100" alt="carousel">
+		</div>
 
 	</div>
 
@@ -64,4 +64,5 @@
 	</footer>
 
 </body>
+<script src="js/toggle.js"></script>
 </html>

@@ -75,8 +75,18 @@ body {
 .nav-top {
     background-color: #ddd;
     width: 100%;
+    max-height: 0em;
     overflow: hidden;
     position: absolute;
+    -moz-transition: all 250ms linear;
+    -o-transition: all 250ms linear;
+    -webkit-transition: all 250ms linear;
+    transition: all 250ms linear;
+}
+
+.nav-top[data-state="expanded"] {
+    max-height: 250rem;
+    opacity: 1;
 }
 
 .search label {
@@ -101,7 +111,21 @@ body {
     padding: 0.25em 0;
 }
 
-.navigation a {
-        text-decoration: none;
-        color: #555;
+.navigation a,
+.navigation a:link,
+.navigation a:visited {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    width: 100%;
+}
+
+.link1, .link3 {
+    background-color: #ccc;
+    width: 100%;
+}
+
+
+.carousel img{
+    margin: 0 auto;
 }
