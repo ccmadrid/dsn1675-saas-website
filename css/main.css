@@ -99,6 +99,12 @@ body {
     margin: 3px;
 }
 
+.search-icon {
+    width: 1em;
+    padding: 0;
+    margin: 0;
+}
+
 .navigation ul {
     list-style: none;
     margin: 0;
@@ -149,8 +155,7 @@ body {
     position: absolute;
     margin: 0;
     padding: 0;
-    border: solid 2px;
-    width: 25%;
+    width: 40%;
     top: 50%;
     left: 25%;
     margin-right: -50%;
@@ -159,6 +164,7 @@ body {
 
 .device {
     left: 75%;
+    background-image: url(../images/cover-1.jpg);
 }
 
 
