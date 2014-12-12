@@ -132,6 +132,7 @@ body {
 }
 
 .search label {
+    position: static;
     overflow: hidden;
     margin: 0;
     padding: 0;
