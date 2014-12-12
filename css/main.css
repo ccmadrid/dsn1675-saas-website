@@ -25,7 +25,7 @@ html {
 }
 
 img {
-    /*width: 100%;*/
+    width: 100%;
     display: block;
 }
 
@@ -34,81 +34,54 @@ body {
     padding: 0;
 }
 
-.banner {
-    position: relative;
-}
+/*============================================================================*/
+/*=======================COMMON STYLES========================================*/
+/*============================================================================*/
 
-
-.headline {
-    margin: 0;
-}
-
-.button1 {
-    margin: 0 auto;
-    display: block;
-}
-
-
-.banner-image {
-
-    width: 100%;
-    overflow: hidden;
-}
-
-.banner-image img {
-    width: 100%;
-
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-}
-
-
-.banner-content {
-    margin: 0;
-    padding: 1em;
-    position: absolute;
-    top: 7em;
-    z-index: 100;
-    color: #fff;
-    background-color: #000;
-    width: 100%;
-    text-align: center;
-}
-
+/*=======================HEADER===============================================*/
 .header {
-    width: 100%;
-    height: 5em;
+    display: block;
     background-color: #eee;
-    padding: 0;
-    margin: 0;
+    height: 5em;
+    z-index: 9999;
+}
+
+.logo {
+    height: 5em;
 }
 
 
+.logo-link {
+    height: 3em;
+    margin: 0;
+}
 
 .icon {
-    display: inline;
-    margin: .75em;
-    padding: 0;
-    height: 3.5em;
-    z-index: 100;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    height: 3em;
+    width: 7em;
 }
 
 .title {
-    display: none;
+    position: absolute;
+    overflow: hidden;
+    text-indent: 110%;
+    white-space: nowrap;
+    width: 0;
+
 }
 
-.logo,
-.logo:link,
-.logo:visited {
-    position: relative;
-    height: 5em;
-    padding: 0;
-    margin: 0;
+.centered {
+    display: block;
+    margin: 0 auto;
 }
 
+
+/*=======================END HEADER===========================================*/
+
+/*=======================JAVASCRIPT BUTTONS===================================*/
 .rtt {
     width: 70px;
     height: 42px;
@@ -133,17 +106,16 @@ body {
     text-indent: 100%;
     white-space: nowrap;
 }
+/*=======================END JAVASCRIPT BUTTONS===============================*/
 
+/*=======================TOGGLE INTERIOR======================================*/
 .nav-top {
-    display: inline-block;
+    display: block;
     background-color: #ddd;
     width: 100%;
     max-height: 0em;
     overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 5em;
-    z-index: 999;
+    z-index: 10000;
     -moz-transition: all 250ms linear;
     -o-transition: all 250ms linear;
     -webkit-transition: all 250ms linear;
@@ -155,13 +127,17 @@ body {
     opacity: 1;
 }
 
+.search-field input {
+
+}
+
 .search label {
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
 
-.search-field, .submit {
+.search-field, .submit-search {
     display: inline-block;
     margin: 0;
 }
@@ -198,7 +174,7 @@ button:focus {
     outline: 3px solid #000;
 }
 
-.input-field{
+.input-field {
     margin: 0 auto;
     width: 100%;
     max-width: 45em;
@@ -247,107 +223,15 @@ textarea:focus {
     width: 100%;
 }
 
-.current{
-    background-color: #ddd;
-}
-
-.covers {
-    display: inline-block;
-    padding: 0;
-    width: 100%;
-    margin: 0;
-}
-
-.main {
-
-}
-
-.signup {
-    display: block;
-    text-decoration: none;
-    padding: 0.5em;
-    margin: 0 5%;
+.current {
     background-color: #eee;
-    color: #222;
-    border: solid #000 2px;
-    text-align: center;
-   }
-
-.bubble {
-
 }
+/*=======================END TOGGLE INTERIOR==================================*/
 
-.iphone{
-    display: block;
-
-}
-
-
-
-.ipad {
-    display: none;
-
-}
-
-.macbook {
-    display: none;
-}
-
-.overlap {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-.overlap h2 {
-    margin: 0;
-    width: 100%;
-    height: 3em;
-    position: absolute;
-    bottom: 0;
-    right:0;
-    text-align: center;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.45);
-    padding: 0.25em;
-    line-height: 1em;
-}
-
-.overlap img {
-    position: static;
-}
-
-.ontop {
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-
-.features {
-    display: block;
-    width: 100%;
-    overflow: hidden;
-
-}
-
-.round {
-    border-radius: 2em;
-    overflow: hidden;
-}
-
-.span {
-    display: inline-block;
-    margin: 0;
-    width: 100%;
-}
-
+/*=======================FOOTER===============================================*/
 .footer {
     background-color: #eee;
     display: block;
-
     margin-top: 2em;
 }
 
@@ -356,99 +240,20 @@ textarea:focus {
     color: #222;
 }
 
+.footer ul:last-child {
+    color: #fff;
+}
 
 .footer ul {
     list-style: none;
 }
 
-
-.spacer {
-    dsplay: block;
-    height: 5em;
+.yellow {
+    color: #ffd700;
 }
+/*=======================END FOOTER===========================================*/
 
-.cta {
-    position: absolute;
-    margin: 0 auto;
-    top: 0em;
-    padding: 1em;
-    width: 95%;
-    text-align: center;
-    font-size: 6vw;
-
-}
-
-.container{
-    width: 100%;
-    background-color: #eff;
-    overflow: scroll;
-}
-
-
-/*=======================PRICING==============================*/
-.pricing {
-    position: relative;
-    display: inline-block;
-}
-
-.pricing-img {
-    width: 100%;
-}
-
-.pricing-img img, .pricing-features img{
-    display: block;
-    width: 75%;
-    margin: 1em auto;
-}
-
-.price-free, .price-5, .price-15{
-    padding: 1em;
-    margin: 1em auto;
-    border-radius: 1em;
-    text-decoration: none;
-    color: #fff;
-}
-
-
-.price-free{
-    background-color: #c2c2c2;
-}
-
-.price-5, .price-15{
-    background-color: #FFD700;
-    color: #000;
-}
-
-.price-15 {
-
-}
-
-.price-button {
-    display: block;
-    margin: 0 auto;
-
-}
-
-.pricing-features img{
-    width: 75%;
-
-}
-
-.pricing-features {
-    text-align: center;
-}
-
-/*=======================PRICING==============================*/
-
-
-
-
-
-
-
-
-
-/*=======================ACCESSIBILITY========================*/
+/*=======================ACCESSIBILITY========================================*/
 a:focus {
     outline: 3px solid #eee;
 }
@@ -476,32 +281,473 @@ a:active {
 .skip-links a:focus {
     top: 0;
 }
-/*=======================ACCESSIBILITY========================*/
-@media only screen and (min-width: 26.667em){
+/*=======================ACCESSIBILITY========================================*/
+
+/*=======================MEDIA QUERIES========================================*/
+@media only screen and (min-width: 26.667em) {
 
 
     .nav-top {
-        max-height: 5.5em;
-
+        max-height: 6em;
     }
 
-    .main {
-        top: 5.5em;
+    .header {
+        margin: 0 0 6em 0;
     }
 
-    .ipad {
-        display: block;
+    .nav-btn {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 57.167em) {
+    .header {
+        position: fixed;
     }
 
+    .article {
+        margin-top: 5em;
+    }
 
+    .nav-top {
+        max-height: 8em;
+        position: fixed;
+        left: 0;
+        top: 1em;
+        background-color: rgba(255,255,255, 0);
+    }
+
+    .icon {
+        z-index: 99;
+    }
+
+    .link1, .link2, .link3 {
+        background-color: #eee;
+        border-radius: 0 0 0.2em 0.2em;
+    }
+
+    .current {
+        background-color: #ddd;
+    }
+    .navigation {
+        margin-top: 2em;
+    }
+
+    .footer {
+        margin-top: 5em;
+    }
+}
+
+
+/*=======================END MEDIA QUERIES====================================*/
+
+/*============================================================================*/
+/*=======================END COMMON STYLES====================================*/
+/*============================================================================*/
+
+
+/*=======================STOREFRONT===========================================*/
+.banner {
+    width: 100%;
+    height: 15em;
+    overflow: hidden;
+    position: relative;
+    z-index: -10;
+}
+
+.banner-bg {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.headline {
+    top: 2.5vw;
+    width: 95%;
+    left: 2.5%;
+    text-align: center;
+    font-size: 7vw;
+}
+
+.saas-description {
+    top: 4vw;
+    width: 75%;
+    left: 2.5%;
+    color: #000;
+}
+
+.start {
+    position: absolute;
+    display: block;
+    width: 9   em;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    padding: 1em;
+    background-color: #ffd700;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px #000;
+    border-radius: 1em;
+    top: 20em;
+}
+
+@media only screen and (min-width: 26.667em) {
+
+    .banner {
+        height: 20em;
+    }
+    .start {
+        top: 31em;
+    }
+
+    .cta-wrapper {
+        width: 70%;
+        margin: 3em 15%;
+        text-align: center;
+    }
 
 }
 
-@media only screen and (min-width: 57.167em){
+@media only screen and (min-width: 57.167em) {
 
+    .banner {
+        height: 30em;
+    }
+
+    .headline {
+        top: 1em;
+        width: 7em;
+        font-size: 5em;
+        line-height: 0.9em;
+        left: 5%;
+    }
+
+    .saas-description {
+        top: 6em;
+        width: 40em;
+        font-size: 1.2em;
+        left: 5%;
+    }
+
+    .start {
+        top: 35em;
+    }
+
+    .feature {
+        position: static;
+    }
+}
 
 .macbook {
+    max-width: 25em;
+    margin: 0 auto;
+}
+
+.floating {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.cta-wrapper{
+    width: 80%;
+    margin: 3em 10%;
+    text-align: center;
+}
+
+.cta {
+    margin: 0 auto;
+}
+
+.feature {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    border-radius: 1em;
+    border: solid #000 1px;
+}
+
+.caption {
+    position: absolute;
+    padding: 2em 10%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.triangle-right {
+    position:relative;
+    padding: 0.25em;
+    color:#000;
+    background: #ddd;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    text-align: center;
+    border: solid #000 1px;
+    max-width: 15em;
+}
+
+
+.triangle-right:before {
+    content:"";
+    position:absolute;
+    bottom:-20px;
+    left:40px;
+    border-width:20px 20px 0;
+    border-style:solid;
+    border-color:#000 transparent;
+    display:block;
+    width:0;
+}
+
+/* creates the smaller  triangle */
+.triangle-right:after {
+    content:"";
+    position:absolute;
+    bottom:-18px;
+    left:42px;
+    border-width:18px 18px 0;
+    border-style:solid;
+    border-color: #ddd transparent;
+    display:block;
+    width:0;
+}
+
+.learn-more {
     display: block;
 }
 
+.learn-more p, .learn-more-button {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.learn-more-button {
+    padding: 1em;
+    width: 10em;
+    border: 1px solid #000;
+    border-radius: 1em;
+    margin: 1em auto;
+    text-decoration: none;
+    color: #000;
+    background-color: #eee;
+}
+
+/*=======================END STOREFRONT=======================================*/
+
+/*=======================PRICING==============================*/
+
+.container {
+    position: relative;
+}
+
+.pricing {
+    position: relative;
+    display: inline-block;
+}
+
+.pricing-img {
+    width: 100%;
+}
+
+.pricing-img img, .pricing-features img {
+    display: block;
+    width: 75%;
+    margin: 1em auto;
+}
+
+.price-free, .price-5, .price-15{
+    padding: 1em;
+    margin: 1em auto;
+    border-radius: 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.price-free {
+    background-color: #c2c2c2;
+}
+
+.price-5 {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.price-15 {
+    color: #f66;
+    background-color: #FFD700;
+}
+
+.price-button {
+    width: 8em;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pricing-features img {
+    width: 75%;
+}
+
+.pricing-features {
+    text-align: center;
+}
+
+.col-1 {
+    background-color: #ddd;
+}
+
+.col-2 {
+    background-color: #ffb;
+}
+
+.col-3 {
+    background-color: #fbb;
+}
+
+.faq {
+    margin-top: 5em;
+}
+
+.faq p {
+    text-align: center;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline-block;
+    margin: 0;
+}
+
+.sm-links {
+    display: inline;
+    text-decoration: none;
+    color: #888;
+}
+
+@media only screen and (min-width: 26.667em) {
+    .faq p{
+        text-align: left;
+    }
+    .ftr-lst {
+        height: 25em;
+        overflow: auto;
+    }
+}
+@media only screen and (min-width: 57.167em) {
+    .container {
+        top: 4em;
+    }
+}
+
+.ftr-lst {
+    list-style: none;
+    text-indent: none;
+    padding: 0;
+}
+
+.ftr {
+    padding: 0;
+
+}
+
+.sm-icon {
+    width: 3em;
+    margin-top: 0.5em;
+}
+/*=======================END PRICING==========================*/
+
+
+/*=======================FORMS================================*/
+
+label {
+    /*hiding the labels without using display:none so that its still accessible for visually impaired*/
+    position: absolute;
+    z-index: -999;
+}
+
+.search-label {
+    display: inline;
+}
+
+input + label {
+    display: inline-block;
+}
+
+
+.submit {
+    text-align: center;}
+
+button {
+    padding: 0.5em;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 0.5em;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+}
+
+button:active {
+    background-color: #d2d2d2;
+}
+
+button:focus {
+    outline: 3px solid #000;
+}
+
+.field {
+    display: block;
+    font-size: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 45em;
+}
+
+.field:focus {
+    outline: 3px solid #000;
+}
+
+.input-field{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 45em;
+    position: relative;
+}
+
+.form-sheet {
+    margin: 0 auto;
+}
+
+.sign-up {
+    margin: 0 auto;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: spin-button;
+    opacity: 1;
+}
+
+.akatsuki {
+    position: absolute;
+    top: 20vw;
 }
