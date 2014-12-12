@@ -35,15 +35,12 @@ body {
 }
 
 .banner {
-    position: absolute;
-
+    position: relative;
 }
 
 
 .headline {
-    margin: 0 auto;
-    text-align: center;
-    color: #000;
+    margin: 0;
 }
 
 .button1 {
@@ -52,10 +49,34 @@ body {
 }
 
 
-.background-image
+.banner-image {
+
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-image img {
+    width: 100%;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
 
 
-
+.banner-content {
+    margin: 0;
+    padding: 1em;
+    position: absolute;
+    top: 7em;
+    z-index: 100;
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+}
 
 .header {
     width: 100%;
@@ -238,13 +259,7 @@ textarea:focus {
 }
 
 .main {
-    position: relative;
-}
 
-.banner {
-    margin: 0 auto;
-    position:  relative;
-    overflow: hidden;
 }
 
 .signup {
@@ -332,7 +347,7 @@ textarea:focus {
 .footer {
     background-color: #eee;
     display: block;
-    position: relative;
+
     margin-top: 2em;
 }
 
@@ -363,13 +378,19 @@ textarea:focus {
 
 }
 
-
-.ontop, .banner {
-     height: 175vw;
+.container{
+    width: 100%;
+    background-color: #eff;
+    overflow: scroll;
 }
 
 
 /*=======================PRICING==============================*/
+.pricing {
+    position: relative;
+    display: inline-block;
+}
+
 .pricing-img {
     width: 100%;
 }
@@ -472,9 +493,6 @@ a:active {
         display: block;
     }
 
-.ontop, .banner {
-     height: 105vw;
-}
 
 
 }
