@@ -386,17 +386,16 @@ a:active {
 .start {
     position: absolute;
     display: block;
-    width: 9   em;
-    text-align: center;
+    width: 30%;
     color: #000;
     text-decoration: none;
+    text-align: center;
     padding: 1em;
     background-color: #ffd700;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 35%;
     border: solid 1px #000;
     border-radius: 1em;
-    top: 20em;
+    top: 18em;
 }
 
 @media only screen and (min-width: 26.667em) {
